@@ -1,0 +1,165 @@
+html { 
+  height: 100%;
+}
+body { 
+  font: normal .80em arial, sans-serif;
+  background: #FFF url(../images/GeneralBackground.jpg) no-repeat center fixed;
+  color: #222;
+}
+#main, nav, #container, #logo, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+#main {
+  margin: 50px auto;
+  width: 1000px;
+  border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+  -webkit-border: 13px 13px 13px 13px;
+  background: transparent url(../images/main.png);
+  padding-bottom: 30px;
+}
+header { 
+  background: transparent;
+  height: 179px;
+}
+#logo { 
+  width: 930px;
+  height: 179px;
+  background: transparent;
+  color: #888;
+  padding: 0;
+}
+#logo h1, #logo h2 { 
+  font: normal 320% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
+  padding: 20px 0 0 0;
+  color: #000;
+  text-decoration: none;
+}
+#logo_text h1 a .logo_colour { 
+  color: #0586C9;
+}
+#logo_text a:hover .logo_colour { 
+  color: #000;
+}
+#logo_text h2 { 
+  font: 170% 'News Cycle', arial, sans-serif;
+  padding: 0 0 0 0;
+}
+nav { 
+  height: 44px;
+  width: 930px;
+  margin: -34px auto 0 auto;
+  color: #222;
+  background: #ddd; 
+  background: -moz-linear-gradient(#fff, #ddd);
+  background: -o-linear-gradient(#fff, #ddd);
+  background: -webkit-linear-gradient(#fff, #ddd);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  border: 1px solid #eee;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+} 
+#menu_container { 
+  width: 930px;
+  margin: 0 auto 0 auto;
+}
+#site_content { 
+  width: 930px;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 15px 0 15px 0;
+} 
+.content { 
+  text-align: left;
+  width: 930px;
+  margin: 0 0 15px 0;
+  float: left;
+  font-size: 120%;
+  padding: 14px 0 0 0;
+}
+footer { 
+  width: 930px;
+  font: 240% 'Jenna Sue', arial, sans-serif;
+  height: 30px;
+  padding: 5px 0 20px 0;
+  text-align: center; 
+  color: #222;
+  background: #ddd;
+  background: -moz-linear-gradient(#fff, #ddd);
+  background: -o-linear-gradient(#fff, #ddd);
+  background: -webkit-linear-gradient(#fff, #ddd);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  border: 1px solid #eee;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+}
+
+/*Diseño de tabla lista curso*/
+.tit_table{ font:Arial, Helvetica, sans-serif bold;}
+.curso_tabla{display: table; margin:0 auto; border-radius:5px 5px 5px 5px;}
+.curso_fila{display: table-row;}
+.curso_izqcolumna{
+	display: table-cell;
+	padding: 5px; 
+	border-top: 2px solid #009900;
+	border-left: 2px solid #009900;
+	border-right: 2px solid #009900;
+	border-bottom: 2px solid #009900;
+	width:300px; 
+	text-align:center; 
+	border-radius:5px 5px 5px 5px;
+}
+.curso_dercolumna{
+	display: table-cell;
+	padding: 5px; 
+	border-top: 2px solid #009900;
+	border-right: 2px solid #009900;
+	border-bottom: 2px solid #009900;	
+	text-align:center; 
+	border-radius:5px 5px 5px 5px;
+}
+
+/*Diseño de tabla lista alumnos*/
+.alumno_tabla{display: table; margin:0 auto; border-radius:5px 5px 5px 5px;}
+.alumno_fila{display: table-row;}
+.alumno_izqcolumna{
+	display: table-cell;
+	padding: 5px; 
+	border-top: 2px solid #009900;
+	border-left: 2px solid #009900;
+	border-right: 2px solid #009900;
+	border-bottom: 2px solid #009900;
+	width:300px; 
+	text-align:center; 
+	border-radius:5px 5px 5px 5px;
+}
+.alumno_dercolumna{
+	display: table-cell;
+	padding: 5px; 
+	border-top: 2px solid #009900;
+	border-right: 2px solid #009900;
+	border-bottom: 2px solid #009900;	
+	text-align:center; 
+	border-radius:5px 5px 5px 5px;
+}
+#d_actividades{width:702px; margin:0 auto;}
+#lista_actividades{padding:0px 100px 0px 0px;}
+.acciones p{float:left;}
+.d_activity{float:left;}
+#vacio{clear:both;}
+#reproductor{margin:0 auto; width:400px;}
+#descripcion_c{margin:0 auto; width:800px;}
+#form_informe{margin:0 auto; width:430px; padding:90px 0px 0px 0px;}
+#usuario{padding-left:650px}
