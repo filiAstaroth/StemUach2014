@@ -1,3 +1,11 @@
+/**************************************************************************************/
+/*Autores:                                                                            */
+/*         Pamela Morales Moena                                                       */
+/*         Jose Luis Ramirez Barra                                                    */
+/*                                                                                    */
+/*Año    : 2013                                                                       */
+/**************************************************************************************/
+
 #cabezera{}
 #contenedor{background:url(../images/fondo_inicio.jpg) center top no-repeat;height:1000px;}
 #pie_pagina{}
@@ -165,3 +173,5 @@
     font-size: 12px;
     color: #e4e4e4;
 }
+#registro p{float:left;}
+#r_texto{padding-right:5px; color:#FFF;}

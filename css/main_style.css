@@ -1,3 +1,11 @@
+/**************************************************************************************/
+/*Autores:                                                                            */
+/*         Pamela Morales Moena                                                       */
+/*         Jose Luis Ramirez Barra                                                    */
+/*                                                                                    */
+/*Año    : 2013                                                                       */
+/**************************************************************************************/
+	
 html { 
   height: 100%;
 }
@@ -163,3 +171,16 @@ footer {
 #descripcion_c{margin:0 auto; width:800px;}
 #form_informe{margin:0 auto; width:430px; padding:90px 0px 0px 0px;}
 #usuario{padding-left:650px}
+#btn_nuevoAlumno{padding-right: 10px;}
+#acciones_c{padding-left:216px;}
+#acciones_a{padding-left:128px;}
+#acciones_i{padding-left:230px;}
+
+#formulario_r{width:400px; margin:auto auto;}
+#titulo_r{width:204px; margin:0 auto}
+#d_tutor{width:330px; margin:auto auto; padding-top:8px;}
+#d_usuario{width:330px; margin:auto auto;}
+#e_registro{padding-left:80px;}
+#nuevo_curso{padding-left:36px; width:400px;}
+#nuevo_alumno{padding-left:36px; width:440px;}
+#titulo_c{margin:0 auto; width:78px;}

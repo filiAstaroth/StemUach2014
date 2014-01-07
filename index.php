@@ -1,4 +1,11 @@
-<?php
+﻿<?php
+	/**************************************************************************************/
+	/*Autores:                                                                            */
+	/*         Pamela Morales Moena                                                       */
+	/*         Jose Luis Ramirez Barra                                                    */
+	/*                                                                                    */
+	/*Año    : 2013                                                                       */
+	/**************************************************************************************/
 	include 'coneccion.php';	
 	header('Content-Type: text/html; charset=UTF-8');
 ?>
@@ -19,7 +26,7 @@
 	  $(document).ready(function() {
 		$(".f_registro").fancybox({  						
 		  'width'				: 500,
-		  'height'				: 300,
+		  'height'				: 420,
 		  'autoScale'			: false,
 		  'transitionIn'		: 'fade',
 		  'transitionOut'		: 'fade',
@@ -57,7 +64,10 @@
             <input type="text" id="username" name="username" placeholder="username">
             <input type="password" id="password" name="password" placeholder="password">
             <input type="button" value="Ingresar" onclick="v_usuario()">
-            <div id="registro"><p>No estas registrado?</p><a id="registrar" class="f_registro" href="registro.php">Registrate</a></div>
+            <div id="registro">
+            	<p id="r_texto">No estas registrado?</p>
+                <p><a id="registrar" class="f_registro" href="registro.php">Registrate</a></p>
+            </div>
         </div>      
     </div>
 </div>

@@ -1,4 +1,11 @@
 <?php
+	/**************************************************************************************/
+	/*Autores:                                                                            */
+	/*         Pamela Morales Moena                                                       */
+	/*         Jose Luis Ramirez Barra                                                    */
+	/*                                                                                    */
+	/*Año    : 2013                                                                       */
+	/**************************************************************************************/
 	include 'coneccion.php';
 	require_once('fpdf/fpdf.php');
 	
@@ -9,7 +16,7 @@
 			$this->SetFont('Arial','B',8);
 			// Posición: a 1,5 cm del final
 			$this->SetY(-15);
-			$this->Cell(0,10,'Este es el pie de página creado con el método Footer() de la clase creada PDF que hereda de FPDF','T',0,'C');
+			$this->Cell(0,10,'Proyecto STEM UACH 2013 - Pamela Morales, Jose Luis Ramirez - Ingeniería Civil en Informática','T',0,'C');
 		}
 		function Header() //Encabezado
 		{
@@ -80,6 +87,6 @@
 	$pdf->Ln();
 	$pdf->SetFont('Arial','B',11);
 	$pdf->Cell(0,5,'Segundo Comentario',0,1,'L');
-	$pdf->ImprimirComentario($_POST['coment2']);	
+	$pdf->ImprimirComentario($_POST['coment2']);
 	$pdf->Output();//Salida al navegador
 ?>

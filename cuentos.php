@@ -1,4 +1,11 @@
-<?php 
+<?php
+	/**************************************************************************************/
+	/*Autores:                                                                            */
+	/*         Pamela Morales Moena                                                       */
+	/*         Jose Luis Ramirez Barra                                                    */
+	/*                                                                                    */
+	/*Año    : 2013                                                                       */
+	/**************************************************************************************/
 	include 'coneccion.php';
 	header('Content-Type: text/html; charset=UTF-8');
 ?>
@@ -8,6 +15,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Proyecto STEM UACH</title>
   <link rel="stylesheet" type="text/css" href="css/main_style.css" />
+  <link rel="stylesheet" type="text/css" href="css/botones.css" />  
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
   
@@ -41,25 +49,26 @@
 <body>
 	<div id="contenedor">
     	<div id="form_1">
+        	<div id="titulo_c"><h2>Cuentos</h2></div>
             <div id="descripcion_c">
                 <?php 
                     $cuento = mysql_fetch_array(mysql_query("SELECT * FROM cuentos WHERE id='".$_GET['idcue']."'"));
                 ?>
                 <table width="800" border="1">
                   <tr>
-                    <td width="100">Nombre</td>
+                    <td width="100" style="text-align:center"><strong>Nombre</strong></td>
                     <td><?php echo "".$cuento['nombre']?></td>
                   </tr>
                   <tr>
-                    <td width="100">Descripci&oacute;n</td>
+                    <td width="100" style="text-align:center"><strong>Descripci&oacute;n</strong></td>
                     <td><?php echo "".$cuento['descripcion']?></td>
                   </tr>
                 </table>
             </div><br/>
             <div id="reproductor">        
             </div>
-            <div id="acciones_c" class="acciones">
-                <p id="btn_generarInforme"><input type="button" value="Generar Informe"/></p>
+            <div id="acciones_i" class="acciones">
+                <p id="btn_generarInforme"><input type="button" value="Generar Informe" class="boton"/></p>
             </div>
         </div>
         <form METHOD="post" ACTION="informe.php">
@@ -85,8 +94,8 @@
                         </div>                    
                     </div>
                 </div>
-                <div id="acciones_c" class="acciones">
-                    <p id="btn_generar"><input type="submit" value="Generar" name="generar"></p>
+                <div id="acciones_g" class="acciones">
+                    <p id="btn_generar"><input type="submit" value="Generar" name="generar" class="boton"></p>
                 </div>            
             </div>
         </form>   	
